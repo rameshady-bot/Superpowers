@@ -1,0 +1,34 @@
+22:30:54 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_223054.log
+22:30:54 [INFO] 
+============================================================
+22:30:54 [INFO] VIDÉO — thème : 'la prière'
+22:30:54 [INFO] ============================================================
+22:30:54 [INFO] [1/5] Contenu : puissance_priere | Matthieu 7:7
+22:30:54 [INFO] [2/5] Sélection médias (lumiere/priere)
+22:30:54 [WARNING] Aucune vidéo 'lumiere' — utilisation du fallback : fond.mp4
+22:30:54 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/priere
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:30:54 [INFO] [3/5] Génération voix off
+22:30:54 [INFO] Voix off → puissance_priere_voix
+22:30:54 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:30:54 [INFO] espeak-ng OK — voix fr — 799 Ko
+22:30:54 [INFO] [4/5] Transcription Whisper + sous-titres
+22:30:54 [INFO] Transcription Whisper (tiny) → puissance_priere_voix.wav
+22:30:56 [INFO] Chargement modèle Whisper 'tiny'…
+22:30:56 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:30:56 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:30:56 [INFO] 9/9 clips sous-titres créés
+22:30:56 [INFO] [5/5] Montage vidéo final
+22:30:56 [INFO] Durée voix off : 18.6s
+22:30:56 [INFO] Pas de musique — voix seule
+22:30:56 [INFO] Composition 1080×1920 — 18.6s
+22:30:56 [INFO] Fond vidéo : fond.mp4
+22:30:56 [INFO] Export → puissance_priere.mp4
+22:32:04 [INFO] Vidéo exportée : puissance_priere.mp4 (0.6 Mo)
+22:32:04 [INFO] ────────────────────────────────────────────────────────────
+22:32:04 [INFO] [OK ✓] 'la prière' — 70.3s
+22:32:04 [INFO]   Vidéo → /home/user/Superpowers/tiktok_chretien/output/puissance_priere.mp4
+22:32:04 [INFO] ────────────────────────────────────────────────────────────

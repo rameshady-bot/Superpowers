@@ -1,0 +1,34 @@
+22:26:56 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_222656.log
+22:26:56 [INFO] 
+============================================================
+22:26:56 [INFO] VIDÉO — thème : 'l'espérance et l'avenir'
+22:26:56 [INFO] ============================================================
+22:26:56 [INFO] [1/5] Contenu : esperance_avenir | Jérémie 29:11
+22:26:56 [INFO] [2/5] Sélection médias (ciel/inspirant)
+22:26:56 [WARNING] Aucune vidéo 'ciel' — utilisation du fallback : fond.mp4
+22:26:56 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/inspirant
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:26:56 [INFO] [3/5] Génération voix off
+22:26:56 [INFO] Voix off → esperance_avenir_voix
+22:26:56 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:26:56 [INFO] espeak-ng OK — voix fr — 917 Ko
+22:26:56 [INFO] [4/5] Transcription Whisper + sous-titres
+22:26:56 [INFO] Transcription Whisper (tiny) → esperance_avenir_voix.wav
+22:26:58 [INFO] Chargement modèle Whisper 'tiny'…
+22:26:58 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:26:58 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:26:58 [INFO] 6/6 clips sous-titres créés
+22:26:58 [INFO] [5/5] Montage vidéo final
+22:26:58 [INFO] Durée voix off : 21.3s
+22:26:58 [INFO] Pas de musique — voix seule
+22:26:58 [INFO] Composition 1080×1920 — 21.3s
+22:26:58 [INFO] Fond vidéo : fond.mp4
+22:26:58 [INFO] Export → esperance_avenir.mp4
+22:28:12 [INFO] Vidéo exportée : esperance_avenir.mp4 (0.7 Mo)
+22:28:12 [INFO] ────────────────────────────────────────────────────────────
+22:28:12 [INFO] [OK ✓] 'l'espérance et l'avenir' — 76.5s
+22:28:12 [INFO]   Vidéo → /home/user/Superpowers/tiktok_chretien/output/esperance_avenir.mp4
+22:28:12 [INFO] ────────────────────────────────────────────────────────────
