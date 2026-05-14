@@ -9,11 +9,9 @@ env/
 
 # Dossiers de travail
 temp/*
-output/*
 logs/*
 sessions/*
 !temp/.gitkeep
-!output/.gitkeep
 !logs/.gitkeep
 !sessions/.gitkeep
 
