@@ -1,0 +1,35 @@
+22:25:35 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_222535.log
+22:25:35 [INFO] 
+============================================================
+22:25:35 [INFO] VIDÉO — thème : 'ne crains pas'
+22:25:35 [INFO] ============================================================
+22:25:35 [INFO] [1/5] Contenu : ne_crains_pas | Ésaïe 41:10
+22:25:35 [INFO] [2/5] Sélection médias (ciel/inspirant)
+22:25:35 [WARNING] Aucune vidéo 'ciel' — utilisation du fallback : fond.mp4
+22:25:35 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/inspirant
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:25:35 [INFO] [3/5] Génération voix off
+22:25:35 [INFO] Voix off → ne_crains_pas_voix
+22:25:36 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:25:36 [INFO] espeak-ng OK — voix fr — 976 Ko
+22:25:36 [INFO] [4/5] Transcription Whisper + sous-titres
+22:25:36 [INFO] Transcription Whisper (tiny) → ne_crains_pas_voix.wav
+22:25:37 [INFO] Chargement modèle Whisper 'tiny'…
+22:25:37 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:25:37 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:25:37 [INFO] 9/9 clips sous-titres créés
+22:25:37 [INFO] [5/5] Montage vidéo final
+22:25:37 [INFO] Durée voix off : 22.7s
+22:25:37 [INFO] Pas de musique — voix seule
+22:25:37 [INFO] Composition 1080×1920 — 22.7s
+22:25:37 [INFO] Fond vidéo : fond.mp4
+22:25:38 [INFO] Vidéo bouclée pour atteindre 22.7s
+22:25:38 [INFO] Export → ne_crains_pas.mp4
+22:26:55 [INFO] Vidéo exportée : ne_crains_pas.mp4 (0.8 Mo)
+22:26:55 [INFO] ────────────────────────────────────────────────────────────
+22:26:55 [INFO] [OK ✓] 'ne crains pas' — 79.6s
+22:26:55 [INFO]   Vidéo → /home/user/Superpowers/tiktok_chretien/output/ne_crains_pas.mp4
+22:26:55 [INFO] ────────────────────────────────────────────────────────────

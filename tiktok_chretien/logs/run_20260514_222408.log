@@ -1,0 +1,34 @@
+22:24:08 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_222408.log
+22:24:08 [INFO] 
+============================================================
+22:24:08 [INFO] VIDÉO — thème : 'la confiance en Dieu'
+22:24:08 [INFO] ============================================================
+22:24:08 [INFO] [1/5] Contenu : confiance_en_dieu | Proverbes 3:5-6
+22:24:08 [INFO] [2/5] Sélection médias (nature/calme)
+22:24:08 [WARNING] Aucune vidéo 'nature' — utilisation du fallback : fond.mp4
+22:24:08 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/calme
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:24:08 [INFO] [3/5] Génération voix off
+22:24:08 [INFO] Voix off → confiance_en_dieu_voix
+22:24:08 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:24:08 [INFO] espeak-ng OK — voix fr — 872 Ko
+22:24:08 [INFO] [4/5] Transcription Whisper + sous-titres
+22:24:08 [INFO] Transcription Whisper (tiny) → confiance_en_dieu_voix.wav
+22:24:10 [INFO] Chargement modèle Whisper 'tiny'…
+22:24:10 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:24:10 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:24:10 [INFO] 7/7 clips sous-titres créés
+22:24:10 [INFO] [5/5] Montage vidéo final
+22:24:10 [INFO] Durée voix off : 20.3s
+22:24:10 [INFO] Pas de musique — voix seule
+22:24:10 [INFO] Composition 1080×1920 — 20.3s
+22:24:10 [INFO] Fond vidéo : fond.mp4
+22:24:10 [INFO] Export → confiance_en_dieu.mp4
+22:25:30 [INFO] Vidéo exportée : confiance_en_dieu.mp4 (0.7 Mo)
+22:25:30 [INFO] ────────────────────────────────────────────────────────────
+22:25:30 [INFO] [OK ✓] 'la confiance en Dieu' — 82.0s
+22:25:30 [INFO]   Vidéo → /home/user/Superpowers/tiktok_chretien/output/confiance_en_dieu.mp4
+22:25:30 [INFO] ────────────────────────────────────────────────────────────

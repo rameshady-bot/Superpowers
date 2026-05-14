@@ -1,0 +1,21 @@
+# Vidéo
+moviepy>=2.0.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Voix off
+edge-tts>=6.1.9
+
+# Transcription / sous-titres
+openai-whisper>=20230918
+# ou : faster-whisper>=1.0.0  (plus rapide, moins de RAM)
+
+# Téléchargement médias
+httpx>=0.27.0
+
+# Config
+python-dotenv>=1.0.0
+
+# ── Dépendances système (pas pip) ─────────────────────────
+# espeak-ng  : sudo apt install espeak-ng   (fallback voix)
+# ffmpeg     : sudo apt install ffmpeg      (requis MoviePy)

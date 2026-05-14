@@ -1,0 +1,29 @@
+22:34:18 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_223418.log
+22:34:18 [INFO] 
+============================================================
+22:34:18 [INFO] VIDÉO — thème : 'la paix de Dieu'
+22:34:18 [INFO] ============================================================
+22:34:18 [INFO] [1/5] Contenu : paix_de_dieu | Jean 14:27
+22:34:18 [INFO] [2/5] Sélection médias (eau/calme)
+22:34:18 [WARNING] Aucune vidéo 'eau' — utilisation du fallback : fond.mp4
+22:34:18 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/calme
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:34:18 [INFO] [3/5] Génération voix off
+22:34:18 [INFO] Voix off → paix_de_dieu_voix
+22:34:18 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:34:18 [INFO] espeak-ng OK — voix fr — 894 Ko
+22:34:18 [INFO] [4/5] Transcription Whisper + sous-titres
+22:34:18 [INFO] Transcription Whisper (tiny) → paix_de_dieu_voix.wav
+22:34:20 [INFO] Chargement modèle Whisper 'tiny'…
+22:34:20 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:34:20 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:34:20 [INFO] 8/8 clips sous-titres créés
+22:34:20 [INFO] [5/5] Montage vidéo final
+22:34:20 [INFO] Durée voix off : 20.8s
+22:34:20 [INFO] Pas de musique — voix seule
+22:34:20 [INFO] Composition 1080×1920 — 20.8s
+22:34:20 [INFO] Fond vidéo : fond.mp4
+22:34:20 [INFO] Export → paix_de_dieu.mp4

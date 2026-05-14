@@ -1,0 +1,31 @@
+# Environnement
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Dossiers de travail
+temp/*
+logs/*
+sessions/*
+!temp/.gitkeep
+!logs/.gitkeep
+!sessions/.gitkeep
+
+# Assets (vidéos de fond, trop lourds pour git)
+assets/*.mp4
+assets/*.mov
+assets/*.avi
+assets/*.mkv
+assets/*.webm
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

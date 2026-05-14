@@ -1,0 +1,34 @@
+22:29:35 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_222935.log
+22:29:35 [INFO] 
+============================================================
+22:29:35 [INFO] VIDÉO — thème : 'je puis tout par Christ'
+22:29:35 [INFO] ============================================================
+22:29:35 [INFO] [1/5] Contenu : force_en_christ | Philippiens 4:13
+22:29:35 [INFO] [2/5] Sélection médias (lumiere/celebration)
+22:29:35 [WARNING] Aucune vidéo 'lumiere' — utilisation du fallback : fond.mp4
+22:29:35 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/celebration
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:29:35 [INFO] [3/5] Génération voix off
+22:29:35 [INFO] Voix off → force_en_christ_voix
+22:29:35 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:29:35 [INFO] espeak-ng OK — voix fr — 936 Ko
+22:29:35 [INFO] [4/5] Transcription Whisper + sous-titres
+22:29:35 [INFO] Transcription Whisper (tiny) → force_en_christ_voix.wav
+22:29:37 [INFO] Chargement modèle Whisper 'tiny'…
+22:29:37 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:29:37 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:29:37 [INFO] 9/9 clips sous-titres créés
+22:29:37 [INFO] [5/5] Montage vidéo final
+22:29:37 [INFO] Durée voix off : 21.8s
+22:29:37 [INFO] Pas de musique — voix seule
+22:29:37 [INFO] Composition 1080×1920 — 21.8s
+22:29:37 [INFO] Fond vidéo : fond.mp4
+22:29:37 [INFO] Export → force_en_christ.mp4
+22:30:53 [INFO] Vidéo exportée : force_en_christ.mp4 (0.7 Mo)
+22:30:53 [INFO] ────────────────────────────────────────────────────────────
+22:30:53 [INFO] [OK ✓] 'je puis tout par Christ' — 78.1s
+22:30:53 [INFO]   Vidéo → /home/user/Superpowers/tiktok_chretien/output/force_en_christ.mp4
+22:30:53 [INFO] ────────────────────────────────────────────────────────────

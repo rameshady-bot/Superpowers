@@ -1,0 +1,34 @@
+22:28:13 [INFO] Log → /home/user/Superpowers/tiktok_chretien/logs/run_20260514_222813.log
+22:28:13 [INFO] 
+============================================================
+22:28:13 [INFO] VIDÉO — thème : 'la paix de Dieu'
+22:28:13 [INFO] ============================================================
+22:28:13 [INFO] [1/5] Contenu : paix_de_dieu | Jean 14:27
+22:28:13 [INFO] [2/5] Sélection médias (eau/calme)
+22:28:13 [WARNING] Aucune vidéo 'eau' — utilisation du fallback : fond.mp4
+22:28:13 [WARNING] Aucune musique trouvée dans /home/user/Superpowers/tiktok_chretien/assets/music.
+Ajoutez des fichiers .mp3/.wav dans : /home/user/Superpowers/tiktok_chretien/assets/music/calme
+Sources gratuites : pixabay.com/music, freemusicarchive.org
+22:28:13 [INFO] [3/5] Génération voix off
+22:28:13 [INFO] Voix off → paix_de_dieu_voix
+22:28:13 [WARNING] edge-tts échoué : Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **k
+22:28:13 [INFO] espeak-ng OK — voix fr — 894 Ko
+22:28:13 [INFO] [4/5] Transcription Whisper + sous-titres
+22:28:13 [INFO] Transcription Whisper (tiny) → paix_de_dieu_voix.wav
+22:28:15 [INFO] Chargement modèle Whisper 'tiny'…
+22:28:15 [WARNING] Whisper échoué (HTTP Error 403: Forbidden) — fallback proportionnel
+22:28:15 [WARNING] Whisper indisponible — segmentation proportionnelle utilisée
+22:28:15 [INFO] 8/8 clips sous-titres créés
+22:28:15 [INFO] [5/5] Montage vidéo final
+22:28:15 [INFO] Durée voix off : 20.8s
+22:28:15 [INFO] Pas de musique — voix seule
+22:28:15 [INFO] Composition 1080×1920 — 20.8s
+22:28:15 [INFO] Fond vidéo : fond.mp4
+22:28:15 [INFO] Export → paix_de_dieu.mp4
+22:29:34 [INFO] Vidéo exportée : paix_de_dieu.mp4 (0.7 Mo)
+22:29:34 [INFO] ────────────────────────────────────────────────────────────
+22:29:34 [INFO] [OK ✓] 'la paix de Dieu' — 81.2s
+22:29:34 [INFO]   Vidéo → /home/user/Superpowers/tiktok_chretien/output/paix_de_dieu.mp4
+22:29:34 [INFO] ────────────────────────────────────────────────────────────
