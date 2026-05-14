@@ -1,0 +1,23 @@
+# API Claude
+anthropic>=0.40.0
+
+# Synthèse vocale
+edge-tts>=6.1.9
+
+# Transcription / timecodes mots
+whisper-timestamped>=1.15.4
+
+# Vidéo
+moviepy>=1.0.3
+Pillow>=10.0.0
+
+# Automatisation navigateur (mode Playwright)
+playwright>=1.40.0
+
+# Utilitaires
+python-dotenv>=1.0.0
+httpx>=0.27.0
+
+# Audio
+pydub>=0.25.1
+numpy>=1.24.0

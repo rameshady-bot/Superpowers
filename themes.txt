@@ -1,0 +1,13 @@
+# Exemple de fichier batch — un thème par ligne
+# Les lignes commençant par # sont ignorées
+
+la confiance en Dieu
+surmonter la peur par la foi
+la prière qui change tout
+Dieu pourvoit même dans le désert
+l'identité de l'enfant de Dieu
+la paix qui dépasse toute intelligence
+persévérer dans l'épreuve
+la puissance du pardon
+recommencer après l'échec
+l'espérance chrétienne
