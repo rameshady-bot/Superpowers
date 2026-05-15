@@ -79,35 +79,35 @@ def _build_filter_complex(
     parts.append(f"{concat_in}concat=n={n}:v=1:a=0[vraw]")
 
     # ── 3. Title overlay — top-center, white bold, visible 0→4 s ─────────────
+    # fontfile= causes silent failures with some builds; fontconfig works reliably.
     title_esc = _esc(title)
-    font_bold = _font(_FONT_BOLD)
     parts.append(
         f"[vraw]drawtext="
-        f"fontfile='{font_bold}'"
+        f"font='Liberation Sans'"
         f":text='{title_esc}'"
         f":enable='between(t,0,4)'"
         f":fontsize=52"
         f":fontcolor=white"
         f":x=(w-text_w)/2"
         f":y=120"
-        f":shadowx=3:shadowy=3:shadowcolor=black@0.8"
+        f":shadowx=3:shadowy=3:shadowcolor=black@0.9"
+        f":box=1:boxcolor=black@0.45:boxborderw=16"
         f"[vtitle]"
     )
 
     # ── 4. Scripture reference overlay — bottom-center, italic, last 5 s ──────
     ref_esc = _esc(scripture["reference"])
-    font_italic = _font(_FONT_ITALIC)
     t_start = max(0, total_dur - 5)
     parts.append(
         f"[vtitle]drawtext="
-        f"fontfile='{font_italic}'"
+        f"font='Liberation Sans'"
         f":text='{ref_esc}'"
         f":enable='between(t,{t_start},{total_dur})'"
-        f":fontsize=38"
-        f":fontcolor=white"
+        f":fontsize=44"
+        f":fontcolor=yellow"
         f":x=(w-text_w)/2"
-        f":y=h-160"
-        f":box=1:boxcolor=black@0.55:boxborderw=14"
+        f":y=h-200"
+        f":box=1:boxcolor=black@0.65:boxborderw=20"
         f"[vout]"
     )
 
@@ -122,8 +122,10 @@ def _build_filter_complex(
         tts_idx = seg.get("_tts_input_idx")  # set by _build_cmd, None if missing
 
         if tts_idx is not None:
+            # Convert to stereo if needed, then delay
             parts.append(
-                f"[{tts_idx}:a]adelay={offset_ms}|{offset_ms}[a{i}]"
+                f"[{tts_idx}:a]aformat=channel_layouts=stereo,"
+                f"adelay={offset_ms}|{offset_ms}[a{i}]"
             )
         else:
             # Generate silence via filter source — no additional input needed
@@ -235,14 +237,16 @@ def assemble_video(
     cmd = _build_cmd(segments, title, scripture, output_path, music_path)
     cmd_str = " ".join(cmd)
 
-    # Safety check — warn if command is unusually long (> 500 chars)
-    if len(cmd_str) > 500:
+    # Safety check — warn if command is unusually long.
+    # A normal 5-segment command is ~2000 chars; 10 000 would indicate a build error.
+    if len(cmd_str) > 10_000:
         print(
             f"\n  [assembler] ⚠  FFmpeg command is {len(cmd_str)} characters "
-            f"(> 500 threshold). Printing full command for review:"
+            f"(> 10 000 — possible build error). Printing full command:"
         )
         print(f"\n{cmd_str}\n")
-        if not debug and not dry_run:
+        import sys
+        if sys.stdin.isatty() and not dry_run:
             answer = input("  Continue? [y/N]: ").strip().lower()
             if answer != "y":
                 raise RuntimeError("FFmpeg execution cancelled by user.")
