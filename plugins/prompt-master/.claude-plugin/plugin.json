@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "prompt-master",
+  "displayName": "Prompt Master",
+  "version": "1.6.0",
+  "description": "Generates optimized prompts for any AI tool. Use when writing, fixing, improving, or adapting a prompt for LLM, Cursor, Midjourney, image AI, video AI, coding agents, or any other AI tool.",
+  "author": {
+    "name": "Nidhin Joseph Nelson",
+    "url": "https://github.com/nidhinjs/prompt-master"
+  },
+  "homepage": "https://github.com/nidhinjs/prompt-master#readme",
+  "repository": "https://github.com/nidhinjs/prompt-master",
+  "license": "MIT",
+  "keywords": [
+    "prompt-engineering",
+    "prompts",
+    "claude",
+    "cursor",
+    "midjourney"
+  ]
+}

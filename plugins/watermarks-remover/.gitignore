@@ -1,0 +1,7 @@
+# Local artifacts only — everything else in this plugin directory is tracked.
+.env
+**/__pycache__/
+*.pyc
+.venv/
+*.cleaned.*
+*.bak
